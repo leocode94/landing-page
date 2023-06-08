@@ -1,7 +1,7 @@
 export default function Footer() {
     return (
-        <div>
-            <h1>Footer goes here</h1>
+        <div className="footer">
+            <h3>Site desenvolvido pela Vostok Code</h3>
         </div>
     );
 }
