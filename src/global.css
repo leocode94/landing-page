@@ -1,0 +1,145 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+body {
+  font-size: 100%;
+  background-image: linear-gradient(to bottom right, rgb(12, 70, 157), rgb(105, 255, 232));
+}
+
+h1 {
+  text-align: center;
+  padding: 10px;
+  font-family: 'Amaranth', sans-serif;
+}
+
+h3 {
+  text-align: center;
+  padding: 10px;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+/* NAV HEADER */
+
+.nav--header {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 10px;
+  background-color: black;
+  color: white;
+}
+
+/* HEADER */
+
+.header {
+  background-color: white;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 20px;
+}
+
+/* INFO */
+
+.info {
+  background-color: rgb(255, 255, 255);
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 30px;
+  text-align: center;
+  border-top: 2px solid rgba(0, 0, 0, 0.5);
+}
+
+/* FORM */
+
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px;
+  border-radius: 10px;
+  width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.form--label {
+  font-size: 1.3rem;
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: bold;
+}
+
+.form--input {
+  padding: 10px;
+  font-size: 1.5rem;
+  border-radius: 10px;
+  text-align: center;
+  transition: all 0.3s;
+  border: 1px solid rgb(0, 255, 123);
+}
+
+.form--input:hover {
+  transform: scale(1.05);
+}
+
+.form--textarea {
+  padding: 10px;
+  font-size: 1.2rem;
+  border-radius: 10px;
+  border: 0;
+  border: 1px solid rgb(0, 255, 123);
+  resize: none;
+  transition: all 0.3s;
+}
+
+.form--textarea:hover {
+  transform: scale(1.01);
+}
+
+.form--submit {
+  margin-top: 10px;
+  border-radius: 10px;
+  padding: 10px;
+  background-color: rgb(54, 191, 77);
+  font-family: 'Amaranth', sans-serif;
+  border: 0;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.form--submit:hover {
+  background-color: rgb(134, 211, 147);
+  transform: scale(1.2);
+}
+
+/* FOOTER */
+
+.footer {
+  background-color: rgb(6, 6, 129);
+  color: aliceblue;
+  padding: 50px;
+}
+
+/* THANK YOU */
+
+.thank-you {
+  background-color: aliceblue;
+  width: 80%;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 10px;
+  border-radius: 10px;
+  text-align: center;
+  margin-top: 10px;
+  border: 2px solid rgb(0, 255, 123);
+  font-size: 1.2rem;
+}
