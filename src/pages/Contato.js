@@ -13,7 +13,7 @@ export default function Contato() {
                 <input className="form--input" type="text" id="city" name="city" required /><br />
                 <label className="form--label" htmlFor="message">Escreva uma mensagem:</label><br />
                 <textarea className="form--textarea" name="message" rows={8} cols={34} /><br />
-                <Link to="/thankyou"><input className="form--submit" type="submit" value="ENVIAR" /></Link>
+                <input className="form--submit" type="submit" value="ENVIAR" />
             </form>
         </main>
     )
