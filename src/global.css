@@ -8,6 +8,7 @@
 
 body {
   font-size: 100%;
+  background-attachment: fixed;
   background-image: linear-gradient(to bottom right, rgb(12, 70, 157), rgb(105, 255, 232));
 }
 
@@ -27,10 +28,21 @@ h3 {
 
 .nav--header {
   display: flex;
+  align-items: center;
   justify-content: space-evenly;
   padding: 10px;
   background-color: black;
   color: white;
+}
+
+.nav--header--button {
+  border-radius: 20px;
+  font-size: 1rem;
+  padding: 10px;
+  background-color: rgb(6, 6, 129);
+  color: white;
+  border: none;
+  cursor: pointer;
 }
 
 /* HEADER */
@@ -42,19 +54,42 @@ h3 {
   flex-direction: row;
   align-items: center;
   justify-content: space-evenly;
-  padding: 20px;
+  height: 60px;
 }
 
-/* INFO */
+.header--navlink {
+  color: inherit;
+  font-weight: bold;
+}
 
-.info {
+.header--navlink:hover {
+  text-decoration: underline;
+  border-radius: 10px;
+}
+
+/* ABOUT */
+
+.about--page {
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  border: 2px solid greenyellow;
+}
+
+.about--image {
+  width: 300px;
+  margin: 20px;
+  border-radius: 20px;
+}
+
+.about--info {
+  display: flex;
+  align-items: center;
   background-color: rgb(255, 255, 255);
   width: 100%;
   margin-left: auto;
   margin-right: auto;
   padding: 30px;
   text-align: center;
-  border-top: 2px solid rgba(0, 0, 0, 0.5);
 }
 
 /* FORM */
@@ -64,8 +99,6 @@ h3 {
   flex-direction: column;
   align-items: center;
   padding: 30px;
-  border-radius: 10px;
-  width: 500px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -124,7 +157,7 @@ h3 {
 .footer {
   background-color: rgb(6, 6, 129);
   color: aliceblue;
-  padding: 50px;
+  padding: 10px;
 }
 
 /* THANK YOU */
@@ -142,4 +175,51 @@ h3 {
   margin-top: 10px;
   border: 2px solid rgb(0, 255, 123);
   font-size: 1.2rem;
+}
+
+/* MEDIA QUERIES */
+
+@media only screen and (max-width: 600px) {
+  .nav--header {
+    display: flex;
+    flex-direction: column;
+    column-gap: 40px;
+    padding: 10px;
+    background-color: black;
+    color: white;
+  }
+
+  .nav--header--item {
+    padding: 10px;
+  }
+
+  .header {
+    background-color: white;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 200px;
+  }
+
+  .form--input {
+    padding: 10px;
+    font-size: 1.5rem;
+    border-radius: 10px;
+    text-align: center;
+    transition: all 0.3s;
+    border: 1px solid rgb(0, 255, 123);
+  }
+
+  .form--textarea {
+    padding: 10px;
+    font-size: 1.2rem;
+    border-radius: 10px;
+    border: 0;
+    border: 1px solid rgb(0, 255, 123);
+    resize: none;
+    transition: all 0.3s;
+    height: 8em;
+    width: 18em;
+  }
 }

@@ -4,9 +4,9 @@ export default function NavHeader() {
 
     return (
         <div className="nav--header">
-            <p>{number}</p>
-            <p>atendimento@vostokcode.com.br</p>
-            <p>@vostokcode</p>
+            <p className="nav--header--item">{number}</p>
+            <p className="nav--header--item">atendimento@vostokcode.com.br</p>
+            <button className="nav--header--item nav--header--button">@vostokcode</button>
         </div>
     )
 }
