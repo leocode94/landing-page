@@ -11,7 +11,6 @@ import Projetos from './pages/Projetos';
 import ThankYou from './pages/ThankYou';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
-
 root.render(
   <React.StrictMode>
     <BrowserRouter>
